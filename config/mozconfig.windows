@@ -1,6 +1,6 @@
 # Full source build: identity and profile directory require native compilation.
 ac_add_options --enable-application=browser
-ac_add_options --target=x86_64-pc-mingw32
+ac_add_options --target=x86_64-pc-windows-msvc
 ac_add_options --with-branding=browser/branding/rechteck
 ac_add_options --with-user-appdir=Rechteck
 ac_add_options --with-distribution-id=io.github.migsaito.rechteck
