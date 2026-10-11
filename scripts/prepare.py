@@ -96,7 +96,7 @@ def plan(source):
         nsi = replace_assignment(nsi, key, f'"{value}"', separator=" ", prefix="!define ")
     files[custom / "branding.nsi"] = nsi
     prefs = source / "browser/app/profile/firefox.js"
-    css = source / "browser/base/content/browser.css"
+    css = source / "browser/themes/shared/browser-shared.css"
     files[prefs] = block(prefs.read_text(encoding="utf-8"), (ROOT / "browser/preferences.js").read_text(encoding="utf-8"))
     files[css] = block(css.read_text(encoding="utf-8"), (ROOT / "browser/rectangle.css").read_text(encoding="utf-8"))
     mozconfig = source / "mozconfig"
