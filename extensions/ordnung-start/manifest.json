@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ordnung Start",
+  "version": "0.1.0",
+  "description": "Uma nova aba retangular para o Rechteck Browser e o Firefox.",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {"newtab": "index.html"},
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ordnung-start@rechteck.example",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {"required": ["none"]}
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"
+  }
+}

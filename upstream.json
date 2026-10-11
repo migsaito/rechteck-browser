@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/mozilla-firefox/firefox.git",
+  "revision": "54145f37844018dee93406811dcdeeba00689022",
+  "channel": "development",
+  "note": "Snapshot de mozilla-central. Atualizar e validar antes de cada distribuição."
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rechteck Browser</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="start.js"></script>
+</head>
+<body>
+  <main>
+    <header><div class="mark" aria-hidden="true"><span>. .</span></div><p>guten tag. ordnung.</p><h1>RECHTECK BROWSER</h1><p>Seu próximo destino, em linha reta.</p></header>
+    <form id="search" role="search">
+      <label for="destination">Pesquisar ou abrir um endereço</label>
+      <div class="search-row"><input id="destination" type="text" autocomplete="off" placeholder="Digite um endereço ou uma pesquisa" required autofocus><button type="submit">Abrir</button></div>
+    </form>
+    <nav aria-label="Atalhos"><a href="https://addons.mozilla.org/pt-BR/firefox/">Extensões</a><a href="https://github.com/migsaito/rechteck-browser">Projeto</a><a href="https://github.com/migsaito/rechteck-browser/releases">Versões</a></nav>
+    <section aria-labelledby="notes-title"><h2 id="notes-title">Seu plano de hoje</h2><label for="notes">Anotações salvas neste navegador</label><textarea id="notes" rows="5" maxlength="10000" placeholder="Organize suas tarefas aqui."></textarea><p id="status" role="status" aria-live="polite"></p></section>
+    <footer>gecko. effizienz. rechteck.</footer>
+  </main>
+</body>
+</html>

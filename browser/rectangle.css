@@ -1,0 +1,18 @@
+/* RECHTECK: change browser chrome only, never the content of websites. */
+:root {
+  --toolbarbutton-border-radius: 0px;
+  --tab-border-radius: 0px;
+}
+.tab-background,
+#urlbar-background,
+#searchbar,
+.toolbarbutton-1 > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-stack {
+  border-radius: 0 !important;
+}
+.tabbrowser-tab[selected] .tab-background {
+  border-bottom: 2px solid #d52c36;
+}
+#navigator-toolbox {
+  border-bottom: 1px solid #d52c36;
+}
