@@ -12,6 +12,8 @@ if [[ "$source_dir" == *" "* ]]; then
   exit 2
 fi
 python3 "$repo_dir/scripts/prepare.py" "$source_dir"
+python3 "$repo_dir/scripts/fix-build-telemetry.py" "$source_dir"
+export PYTHONUNBUFFERED=1
 cd "$source_dir"
 ./mach build
 ./mach package
