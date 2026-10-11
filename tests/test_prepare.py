@@ -27,7 +27,7 @@ class PrepareTests(unittest.TestCase):
             "browser/branding/unofficial/locales/en-US/brand.properties": "\n".join(f"{key}=Nightly" for key in ("brandShorterName", "brandShortName", "brandFullName")),
             "browser/branding/unofficial/branding.nsi": "\n".join(f'!define {key}   "old"' for key in ("BrandFullNameInternal", "BrandFullName", "CompanyName", "URLInfoAbout", "HelpLink", "URLManualDownload")),
             "browser/app/profile/firefox.js": 'pref("xpinstall.signatures.required", true);\n',
-            "browser/base/content/browser.css": ":root { color: black; }\n",
+            "browser/themes/shared/browser-shared.css": ":root { color: black; }\n",
         }
         for relative, text in fixtures.items():
             path = self.source / relative
